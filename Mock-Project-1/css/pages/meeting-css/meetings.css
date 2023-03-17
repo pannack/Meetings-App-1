@@ -1,0 +1,92 @@
+.add-meeting-body {
+  margin: 2em;
+}
+h2 {
+  color: white;
+  margin-top: 0;
+}
+main {
+  width: 100%;
+}
+.form {
+  background-color: rgb(115, 200, 213);
+  padding: 1.6em;
+  padding-left: 2em;
+  border-radius: 0.5em;
+}
+.label {
+  padding: 0.8em;
+  padding-left: 0em;
+  font-size: 1.25em;
+  /*font-weight: 900px;*/
+}
+.input {
+  padding-bottom: 1em;
+}
+
+.date {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  border: 2px solid rgb(186, 180, 180);
+}
+.start-time {
+  padding: 0.5em;
+  width: 4em;
+  border: 2px solid rgb(186, 180, 180);
+  border-radius: 6px;
+}
+#description {
+  width: 100%;
+  padding: 1em;
+  padding-left: 0 ;
+  height: 5em;
+  border-radius: 0.4em;
+  border: 2px solid rgb(186, 180, 180);
+}
+#email {
+  width: 100%;
+  border-radius: 0.4em;
+  border: 2px solid rgb(186, 180, 180);
+  padding: 1em;
+  padding-left: 0;
+  
+}
+#button {
+  width: auto;
+  padding: 0.7em;
+  border: none;
+  margin-top: 1em;
+  border-radius: 0.4em;
+  font-size: 1.25em;
+  background-color: rgb(22, 163, 184);
+  color: white;
+  cursor: pointer;
+}
+#button:active{
+  background-color: rgb(15, 140, 154);
+}
+
+
+.types-of-meeting {
+  padding: 0.5em;
+  margin: 1em 0;
+  border-bottom: 0.5px solid rgb(224, 227, 227);
+  /*box-shadow: rgb(186, 180, 180);*/
+  z-index: 0;
+}
+.types-of-meeting a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+hr {
+  border: 1px solid rgb(224, 227, 227);
+}
+@media(min-width:812px){
+  .add-meeting-body{
+    margin: 1.5em 5em;
+  }
+  
+}

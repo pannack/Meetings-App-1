@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login-page"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/login-registration.css" />
+    <script defer src="js/services/auth.js"></script>
+    <script defer src="js/login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://mymeetingsapp.herokuapp.com/api/auth/login"
+        method="post"
+        id="form-group"
+      >
+        <h1>Login</h1>
+        <div>
+          <label for="email">Enter email</label>
+          <input type="email" class="email" id="email" autocomplete="off" required />
+        </div>
+        <div>
+          <label for="pass">Enter Password</label>
+          <input type="password" class="pass" id="pass" required />
+        </div>
+        <span class="message message-error"></span>
+        <div>
+          <button type="submit" class="button">Login</button>
+        </div>
+        <div>
+          <a href="/registration-page.html">Not registered yet? SignUp</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

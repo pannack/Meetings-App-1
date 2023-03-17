@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teams</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/pages/teams.css" />
+
+    <script src="js/login-check.js"></script>
+    <script defer src="js/services/auth.js"></script>
+    <script defer src="js/services/auth-add-teams.js"></script>
+    <script defer src="js/pages/teams-plus.js"></script>
+    <script defer src="js/pages/add-teams.js"></script>
+    <script defer src="js/pages/display-teams-page.js"></script>
+    <script defer src="js/nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-menu nav-bar" id="main-menu">
+        <div class="my-meetings hide-my-meetings d-lg-none">
+          <h3>MyMeetings</h3>
+          <a href="#" class="icon menu-icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-first d-sm-none">
+          <div class="left-nav">
+            <ul class="nav list-unstyled">
+              <li class="link">
+                <a href="calender.html">Calendar</a>
+              </li>
+              <li class="link"><a href="add-meeting.html">Meetings</a></li>
+              <li class="link">
+                <a href="teams.html" class="active">Teams</a>
+              </li>
+              <li class="list">Hello <span class="auth-email"></span></li>
+              <li><a href="login-page.html" class="logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="name-heading">Teams</h1>
+      
+      <p class="heading">View and edit teams you are part of</p>
+      <div class="meetings-list">
+        
+          <div class="team-plus">
+            <span class="plus">+</span>
+          </div>
+          <div class="meetings hide-form">
+            <form
+              action="https://mymeetingsapp.herokuapp.com/api/teams"
+              method="post"
+              class="form"
+            >
+              <div class="add-team name-heading">
+                <div class="team-name-add">
+                  <label for="team-name" class="visually-hidden">Team Name</label>
+                  <input
+                    type="text"
+                    class="team-name"
+                    id="team-name"
+                    placeholder="Team name" required
+                  />
+                </div>
+                <div class="team-short-name-add">
+                  <label for="team-short-name" class="visually-hidden">Team Short Name</label>
+                  <input
+                    type="text"
+                    class="team-short-name"
+                    id="team-short-name"
+                    placeholder="Team short name" required
+                  />
+                </div>
+                <div class="team-description-add">
+                  <label for="team-description" class="visually-hidden" >Description of the team</label>
+                  <textarea
+                    id="team-description"
+                    class="team-description"
+                    rows="3"
+                    placeholder="Provide a description for the team" required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="members">
+                <p class="member">
+                  <strong>Members :</strong>
+                </p>
+              </div>
+              <div class="member-selection">
+                <select class="team-select member-select">
+                  <option value="">Select member</option>
+                </select>
+                <button type="button" class="add">Add</button>
+              </div>
+              <div>
+                <button type="submit" class="add team-add-btn">Add team</button>
+              </div>
+            </form>
+          
+        </div>
+        </div>
+      
+        
+  
+    </main>
+  </body>
+</html>

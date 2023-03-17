@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Registration page"/>
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/login-registration.css" />
+    <script defer src="js/services/auth-reg.js"></script>
+    <script defer src="js/register.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://mymeetingsapp.herokuapp.com/api/auth/register"
+        method="post"
+        id="form-group"
+      >
+        <h1>Registration</h1>
+        <div class="user-name">
+          <label for="name">Enter Username</label>
+          <input type="text" class="name" id="name" required autocomplete="off"/>
+          <p class="message message-error"></p>
+        </div>
+
+        <div class="form-email">
+          <label for="email">Enter email</label>
+          <input type="email" class="email" id="email" autocomplete="off" />
+          <span class="message message-error"></span>
+        </div>
+        <div class="form-password">
+          <label for="pass">Enter Password</label>
+          <input type="password" class="pass" id="pass" />
+          <span class="message message-error"></span>
+        </div>
+
+        <div class="form-confirm-password">
+          <label for="confrmpass">Confirm Password</label>
+          <input type="password" class="confrmpass" id="confrmpass" />
+          <p class="message message-error"></p>
+        </div>
+        <div>
+          <button type="submit" class="button">Register</button>
+        </div>
+        <div>
+          <a href="/login-page.html">Already registered? Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

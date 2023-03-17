@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/pages/calender.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="js/login-check.js"></script>
+
+    <script defer src="js/services/auth.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/services/auth-calendar.js"></script>
+    <script defer src="js/pages/calender.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-menu nav-bar" id="main-menu">
+        <div class="my-meetings hide-my-meetings d-lg-none">
+          <h3><span>MyMeetings</span></h3>
+          <a href="#" class="icon menu-icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-first d-sm-none">
+          <div class="left-nav">
+            <ul class="nav list-unstyled">
+              <li class="link">
+                <a href="calender.html" class="active">Calendar</a>
+              </li>
+              <li class="link"><a href="add-meeting.html">Meetings</a></li>
+              <li class="link"><a href="teams.html">Teams</a></li>
+              <li class="list">Hello <span class="auth-email"></span></li>
+              <li><a href="login-page.html" class="logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+   <div class="container">
+      <h1 class="name-heading-1">Calendar</h1>
+      
+      <div class="date-format">
+        <label for="date" class="visually-hidden">Date</label>
+        <input type="date" name="date" id="date" class="select-date" />
+        <h2 class="selected-date" id="selected-date"></h2>
+        <span class="week-day" id="week-day"></span>
+      </div>
+      <main>
+        <div class="calendar-container">
+          <table class="day-span">
+            <tr>
+              <td class="hour">0</td>
+              <td id="hour-0" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">1</td>
+              <td id="hour-1" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">2</td>
+              <td id="hour-2" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">3</td>
+              <td id="hour-3" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">4</td>
+              <td id="hour-4" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">5</td>
+              <td id="hour-5" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">6</td>
+              <td id="hour-6" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">7</td>
+              <td id="hour-7" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">8</td>
+              <td id="hour-8" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">9</td>
+              <td id="hour-9" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">10</td>
+              <td id="hour-10" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">11</td>
+              <td id="hour-11" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">12</td>
+              <td id="hour-12" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">13</td>
+              <td id="hour-13" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">14</td>
+              <td id="hour-14" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">15</td>
+              <td id="hour-15" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">16</td>
+              <td id="hour-16" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">17</td>
+              <td id="hour-17" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">18</td>
+              <td id="hour-18" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">19</td>
+              <td id="hour-19" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">20</td>
+              <td id="hour-20" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">21</td>
+              <td id="hour-21" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">22</td>
+              <td id="hour-22" class="hour-span"></td>
+            </tr>
+            <tr>
+              <td class="hour">23</td>
+              <td id="hour-23" class="hour-span"></td>
+            </tr>
+          </table>
+          <div class="meetings-container"></div>
+        </div>
+      </main>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter-meeting</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/pages/meeting-css/meetings.css" />
+    <link rel="stylesheet" href="css/pages/meeting-css/filter-meeting.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="js/login-check.js"></script>
+    <script defer src="js/services/auth.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/services/auth-filter.js"></script>
+    <script defer src="js/pages/filter-meeting.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-menu nav-bar" id="main-menu">
+        <div class="my-meetings hide-my-meetings d-lg-none">
+          <h3><span>MyMeetings</span></h3>
+          <a href="#" class="icon menu-icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-first d-sm-none">
+          <div class="left-nav">
+            <ul class="nav list-unstyled">
+              <li class="link">
+                <a href="calender.html">Calendar</a>
+              </li>
+              <li class="link">
+                <a href="add-meeting.html" class="active">Meetings</a>
+              </li>
+              <li class="link"><a href="teams.html">Teams</a></li>
+              <li class="list">Hello <span class="auth-email"></span></li>
+              <li><a href="login-page.html" class="logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="add-meeting-body">
+      <h1 class="name-heading">Meetings</h1>
+      
+      <div class="types-of-meeting">
+        <a href="filter-meeting.html" class="filter-tab"
+          >Filter / Search a meeting</a
+        >
+        <a href="add-meeting.html" class="add-tab meet-active">Add a meeting</a>
+      </div>
+      <div class="form-body form">
+        <form class="filter-form">
+          <h2 class="name-heading">Search for meetings</h2>
+          
+          <div class="input">
+            <div class="label">
+              <label for="dates">Date</label>
+            </div>
+            <select id="dates" class="date">
+              <option value="ALL">ALL</option>
+              <option value="PAST">PAST</option>
+              <option value="PRESENT">TODAY</option>
+              <option value="FUTURE">UPCOMING</option>
+            </select>
+          </div>
+          <div class="input">
+            <div class="label">
+              <label for="description">Search for</label>
+            </div>
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Search using words which describe the meeting "
+            ></textarea>
+          </div>
+          <button type="submit" id="button" >Search meeting</button>
+        </form>
+      </div>
+      <div class="meeting-matching-search">
+        <h1 class="name-heading">Meetings matching search criteria</h1>
+        
+        <div class="search-list"></div>
+      </div>
+    </div>
+  </body>
+</html>

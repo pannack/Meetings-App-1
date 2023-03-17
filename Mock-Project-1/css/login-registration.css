@@ -1,0 +1,51 @@
+body {
+  padding: 1em;
+  background-image: url("/images/background-login-registration.jfif");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#form-group {
+  width: 18em;
+  margin-top: 2em;
+  border: 0.1875em solid rgb(115, 200, 213);
+  border-radius: 0.5em;
+  padding: 0%;
+  background-color: rgba(255, 255, 255, 1);
+}
+div {
+  padding: 1em;
+  text-align: center;
+}
+.button {
+  align-content: center;
+  padding: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+  border: none;
+  border-radius: 0.4em;
+  background-color: rgb(115, 200, 213);
+  cursor: pointer;
+}
+.button:active{
+  background-color: rgb(15, 140, 154);
+}
+input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+h1 {
+  background-color: rgb(115, 200, 213);
+  padding: 0.5em;
+  margin: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.message-error{
+  margin-top: 0;
+}
